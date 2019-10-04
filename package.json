@@ -9,7 +9,7 @@
     "np": "^5.1.0"
   },
   "scripts": {
-    "release": "np --no-tests"
+    "release": "np --no-tests --no-publish && npm publish"
   },
   "renovate-config": {
     "default": {
