@@ -13,19 +13,35 @@
   },
   "renovate-config": {
     "default": {
-      "masterIssue": true,
-      "masterIssueAutoclose": true,
-      "masterIssueTitle": "chore(deps): All pending updates",
-      "automergeType": "branch",
       "rebaseStalePrs": true,
-      "minor": {
-        "automerge": true
-      },
-      "patch": {
-        "automerge": true
-      },
       "semanticCommits": true,
-      "timezone": "Europe/Paris"
+      "timezone": "Europe/Paris",
+      "aberlaasEnableMasterIssue": {
+        "description": "Create a master issue to see any pending updates",
+        "masterIssue": true,
+        "masterIssueAutoclose": true,
+        "masterIssueTitle": "chore(deps): All pending updates"
+      },
+      "aberlaasAutomergeSilently": {
+        "description": "Automerge minor and patch on master directly. Create a PR only when checks fails",
+        "automergeType": "branch",
+        "minor": {
+          "automerge": true
+        },
+        "patch": {
+          "automerge": true
+        }
+      },
+      "aberlaasAutomergePublicly": {
+        "description": "Automerge minor and patch through Pull Requests allowing better visibility on what is happening",
+        "automergeType": "pr",
+        "minor": {
+          "automerge": true
+        },
+        "patch": {
+          "automerge": true
+        }
+      }
     }
   }
 }
