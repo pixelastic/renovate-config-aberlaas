@@ -13,34 +13,35 @@
   },
   "renovate-config": {
     "default": {
+      "description": "Default config options",
       "rebaseStalePrs": true,
       "semanticCommits": true,
-      "timezone": "Europe/Paris",
-      "aberlaasEnableMasterIssue": {
-        "description": "Create a master issue to see any pending updates",
-        "masterIssue": true,
-        "masterIssueAutoclose": true,
-        "masterIssueTitle": "chore(deps): All pending updates"
+      "timezone": "Europe/Paris"
+    },
+    "enableMasterIssue": {
+      "description": "Create a master issue to see any pending updates",
+      "masterIssue": true,
+      "masterIssueAutoclose": true,
+      "masterIssueTitle": "chore(deps): All pending updates"
+    },
+    "automergeSilently": {
+      "description": "Automerge minor and patch on master directly. Create a PR only when checks fails",
+      "automergeType": "branch",
+      "minor": {
+        "automerge": true
       },
-      "aberlaasAutomergeSilently": {
-        "description": "Automerge minor and patch on master directly. Create a PR only when checks fails",
-        "automergeType": "branch",
-        "minor": {
-          "automerge": true
-        },
-        "patch": {
-          "automerge": true
-        }
+      "patch": {
+        "automerge": true
+      }
+    },
+    "automergePublicly": {
+      "description": "Automerge minor and patch through Pull Requests allowing better visibility on what is happening",
+      "automergeType": "pr",
+      "minor": {
+        "automerge": true
       },
-      "aberlaasAutomergePublicly": {
-        "description": "Automerge minor and patch through Pull Requests allowing better visibility on what is happening",
-        "automergeType": "pr",
-        "minor": {
-          "automerge": true
-        },
-        "patch": {
-          "automerge": true
-        }
+      "patch": {
+        "automerge": true
       }
     }
   }
