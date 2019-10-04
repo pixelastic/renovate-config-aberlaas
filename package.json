@@ -9,7 +9,7 @@
     "np": "^5.1.0"
   },
   "scripts": {
-    "release": "np --no-publish && yarn release"
+    "release": "np --no-tests"
   },
   "renovate-config": {
     "default": {
