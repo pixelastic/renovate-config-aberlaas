@@ -1,2 +1,2 @@
-# renovate-config-pixelastic
+# renovate-config-aberlaas
 
