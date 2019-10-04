@@ -13,20 +13,9 @@
   },
   "renovate-config": {
     "default": {
-      "extends": [
-        ":genericConfig",
-        ":setMasterIssue",
-        ":setInvisibleUpdates"
-      ]
-    },
-    "setMasterIssue": {
-      "description": "Set a master issue to see all pending updates",
       "masterIssue": true,
       "masterIssueAutoclose": true,
-      "masterIssueTitle": "chore(deps): All pending updates"
-    },
-    "setInvisibleUpdates": {
-      "description": "Merge all minor and patch updates invisibly in the background. Creates a new PR only if tests fails, otherwise merges to master",
+      "masterIssueTitle": "chore(deps): All pending updates",
       "automergeType": "branch",
       "rebaseStalePrs": true,
       "minor": {
@@ -34,10 +23,7 @@
       },
       "patch": {
         "automerge": true
-      }
-    },
-    "genericConfig": {
-      "description": "Generic config not fitting in any specific part",
+      },
       "semanticCommits": true,
       "timezone": "Europe/Paris"
     }
