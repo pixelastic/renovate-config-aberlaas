@@ -6,10 +6,10 @@
   "author": "Pixelastic <tim@pixelastic.com>",
   "license": "MIT",
   "devDependencies": {
-    "np": "^5.1.0"
+    "aberlaas": "^0.4.9"
   },
   "scripts": {
-    "release": "np --no-tests --no-publish && npm publish"
+    "release": "aberlaas release"
   },
   "renovate-config": {
     "default": {
