@@ -1,6 +1,6 @@
 {
   "name": "renovate-config-aberlaas",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "aberlaas's shareable renovate config",
   "repository": "git@github.com:pixelastic/renovate-config-aberlaas.git",
   "author": "Pixelastic <tim@pixelastic.com>",
@@ -46,7 +46,9 @@
     },
     "scheduleAtNight": {
       "description": "Make it run only during the night",
-      "schedule": ["after 10pm and before 5:00am"]
+      "schedule": [
+        "after 10pm and before 5:00am"
+      ]
     },
     "scheduleAtAnyTime": {
       "description": "Make it run as soon as possible",
