@@ -16,6 +16,8 @@
       "description": "Default config options",
       "rebaseStalePrs": true,
       "semanticCommits": true,
+      "prConcurrentLimit": 20,
+      "prHourlyLimit": 20,
       "timezone": "Europe/Paris"
     },
     "enableMasterIssue": {
