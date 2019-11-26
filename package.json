@@ -18,7 +18,10 @@
       "semanticCommits": true,
       "prConcurrentLimit": 20,
       "prHourlyLimit": 20,
-      "timezone": "Europe/Paris"
+      "timezone": "Europe/Paris",
+      "circleci": {
+        "enabled": false
+      }
     },
     "enableMasterIssue": {
       "description": "Create a master issue to see any pending updates",
