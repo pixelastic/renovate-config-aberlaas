@@ -21,6 +21,9 @@
       "timezone": "Europe/Paris",
       "circleci": {
         "enabled": false
+      },
+      "node": {
+        "enabled": false
       }
     },
     "enableMasterIssue": {

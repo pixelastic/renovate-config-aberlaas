@@ -14,6 +14,7 @@ This contains the main options that you should enable on all aberlaas projects.
 - Add some fairly large limit to the number of concurrent jobs
 - Set all timezones to Paris
 - Do not update docker image in `.circleci/config.yml`
+- Do not update node version in `.nvmrc`
 
 ### `automergeSilently`
 
