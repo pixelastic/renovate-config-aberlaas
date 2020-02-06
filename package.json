@@ -1,6 +1,6 @@
 {
   "name": "renovate-config-aberlaas",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "aberlaas's shareable renovate config",
   "repository": "git@github.com:pixelastic/renovate-config-aberlaas.git",
   "author": "Pixelastic <tim@pixelastic.com>",
@@ -35,8 +35,12 @@
       "packageRules": [
         {
           "groupName": "external dependencies",
-          "packagePatterns": [".*"],
-          "schedule": ["after 6pm and before 9am"]
+          "packagePatterns": [
+            ".*"
+          ],
+          "schedule": [
+            "after 6pm and before 9am"
+          ]
         },
         {
           "groupName": "tooling",
@@ -52,7 +56,9 @@
             "sov",
             "tailwind-config-norska"
           ],
-          "schedule": ["every 2 hours"]
+          "schedule": [
+            "every 2 hours"
+          ]
         }
       ]
     },
