@@ -24,6 +24,13 @@
       },
       "node": {
         "enabled": false
+      },
+      "automergeType": "branch",
+      "minor": {
+        "automerge": true
+      },
+      "patch": {
+        "automerge": true
       }
     },
     "enableMasterIssue": {
@@ -33,14 +40,7 @@
       "masterIssueTitle": "chore(deps): All pending updates"
     },
     "automergeSilently": {
-      "description": "Automerge minor and patch on master directly. Create a PR only when checks fails",
-      "automergeType": "branch",
-      "minor": {
-        "automerge": true
-      },
-      "patch": {
-        "automerge": true
-      }
+      "description": "Automerge minor and patch on master directly. Create a PR only when checks fails"
     },
     "automergePublicly": {
       "description": "Automerge minor and patch through Pull Requests allowing better visibility on what is happening",
