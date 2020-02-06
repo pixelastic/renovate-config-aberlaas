@@ -31,7 +31,30 @@
       },
       "patch": {
         "automerge": true
-      }
+      },
+      "packageRules": [
+        {
+          "groupName": "external dependencies",
+          "packagePatterns": [".*"],
+          "schedule": ["after 6pm and before 9am"]
+        },
+        {
+          "groupName": "tooling",
+          "packageNames": [
+            "aberlaas",
+            "aoinan",
+            "callirhoe",
+            "ensure-url-trailing-slash",
+            "firost",
+            "golgoth",
+            "norska",
+            "pietro",
+            "sov",
+            "tailwind-config-norska"
+          ],
+          "schedule": ["every 2 hours"]
+        }
+      ]
     },
     "enableMasterIssue": {
       "description": "Create a master issue to see any pending updates",
@@ -39,28 +62,9 @@
       "masterIssueAutoclose": true,
       "masterIssueTitle": "chore(deps): All pending updates"
     },
-    "automergeSilently": {
-      "description": "Automerge minor and patch on master directly. Create a PR only when checks fails"
-    },
     "automergePublicly": {
       "description": "Automerge minor and patch through Pull Requests allowing better visibility on what is happening",
-      "automergeType": "pr",
-      "minor": {
-        "automerge": true
-      },
-      "patch": {
-        "automerge": true
-      }
-    },
-    "scheduleAtNight": {
-      "description": "Make it run only during the night",
-      "schedule": [
-        "after 10pm and before 5:00am"
-      ]
-    },
-    "scheduleAtAnyTime": {
-      "description": "Make it run as soon as possible",
-      "schedule": null
+      "automergeType": "pr"
     }
   }
 }
