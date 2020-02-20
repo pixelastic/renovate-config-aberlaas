@@ -11,6 +11,9 @@
   "scripts": {
     "release": "aberlaas release"
   },
+  "files": [
+    "package.json"
+  ],
   "renovate-config": {
     "default": {
       "description": "Default config options",
