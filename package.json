@@ -16,6 +16,7 @@
       "description": "Default config options",
       "rebaseStalePrs": true,
       "semanticCommits": true,
+      "semanticCommitType": "chore",
       "prConcurrentLimit": 20,
       "prHourlyLimit": 20,
       "timezone": "Europe/Paris",
