@@ -11,19 +11,16 @@
   "scripts": {
     "release": "aberlaas release"
   },
-  "files": [
-    "package.json"
-  ],
+  "files": ["package.json"],
   "renovate-config": {
     "default": {
       "description": "Default config options",
-      "extends": [
-        ":semanticCommitTypeAll(chore)"
-      ],
+      "extends": [":semanticCommitTypeAll(chore)"],
       "rebaseStalePrs": true,
       "prConcurrentLimit": 20,
       "prHourlyLimit": 20,
       "timezone": "Europe/Paris",
+      "schedule": ["every 6 hours"],
       "circleci": {
         "enabled": false
       },
@@ -37,15 +34,11 @@
       "patch": {
         "automerge": true
       },
+
       "packageRules": [
         {
           "groupName": "external dependencies",
-          "packagePatterns": [
-            ".*"
-          ],
-          "schedule": [
-            "after 6pm and before 9am"
-          ]
+          "packagePatterns": [".*"]
         },
         {
           "groupName": "tooling",
@@ -61,12 +54,7 @@
             "sov",
             "tailwind-config-norska"
           ],
-          "packagePatterns": [
-            "@pixelastic/.*"
-          ],
-          "schedule": [
-            "every 2 hours"
-          ]
+          "packagePatterns": ["@pixelastic/.*"]
         }
       ]
     },
