@@ -25,7 +25,10 @@
       "prHourlyLimit": 20,
       "timezone": "Europe/Paris",
       "schedule": [
-        "every 6 hours"
+        "after 1am and before 2am",
+        "after 7am and before 8am",
+        "after 1pm and before 2am",
+        "after 7pm and before 8am"
       ],
       "circleci": {
         "enabled": false
