@@ -61,11 +61,11 @@
             "golgoth",
             "norska",
             "pietro",
-            "sov",
-            "tailwind-config-norska"
+            "sov"
           ],
           "packagePatterns": [
-            "@pixelastic/.*"
+            "@pixelastic/.*",
+            "norska-theme-*"
           ]
         }
       ]
