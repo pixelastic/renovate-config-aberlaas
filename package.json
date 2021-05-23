@@ -60,12 +60,20 @@
             "firost",
             "golgoth",
             "norska",
+            "on-circle",
             "pietro",
             "sov"
           ],
           "packagePatterns": [
             "@pixelastic/.*",
             "norska-theme-*"
+          ]
+        },
+        {
+          "groupName": "ESM modules",
+          "packageNames": [
+            "hex-rgb",
+            "is-url-superb"
           ]
         }
       ]
