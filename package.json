@@ -73,7 +73,8 @@
           "groupName": "ESM modules",
           "packageNames": [
             "hex-rgb",
-            "is-url-superb"
+            "is-url-superb",
+            "strip-ansi"
           ]
         }
       ]
