@@ -74,7 +74,10 @@
           "packageNames": [
             "hex-rgb",
             "is-url-superb",
-            "strip-ansi"
+            "p-map",
+            "p-map-series",
+            "strip-ansi",
+            "time-span"
           ]
         }
       ]
