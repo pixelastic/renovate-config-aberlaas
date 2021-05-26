@@ -30,6 +30,9 @@
         "after 1pm and before 2am",
         "after 7pm and before 8am"
       ],
+      "docker": {
+        "enable": false
+      },
       "circleci": {
         "enabled": false
       },
