@@ -74,6 +74,7 @@
         },
         {
           "groupName": "ESM modules",
+          "description": "Sindre Sorhus is moving his modules to ESM. I have to do the same, but for now I'll wait a bit",
           "packageNames": [
             "hex-rgb",
             "is-url-superb",
@@ -85,6 +86,7 @@
         },
         {
           "groupName": "netlify",
+          "description": "Netlify releases a new version almost everyday, as soon as one of their dependencies are updated. We can afford to group those updates and only update once a week.",
           "packageNames": [
             "netlify",
             "netlify-cli"
