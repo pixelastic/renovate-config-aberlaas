@@ -1,6 +1,6 @@
 {
   "name": "renovate-config-aberlaas",
-  "version": "1.5.0",
+  "version": "1.5.1",
   "description": "aberlaas's shareable renovate config",
   "repository": "git@github.com:pixelastic/renovate-config-aberlaas.git",
   "author": "Pixelastic <tim@pixelastic.com>",
@@ -91,7 +91,9 @@
             "netlify",
             "netlify-cli"
           ],
-          "schedule": ["after 1am and before 2am on sunday"]
+          "schedule": [
+            "after 1am and before 2am on sunday"
+          ]
         }
       ]
     },
