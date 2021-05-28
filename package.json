@@ -82,6 +82,14 @@
             "strip-ansi",
             "time-span"
           ]
+        },
+        {
+          "groupName": "netlify",
+          "packageNames": [
+            "netlify",
+            "netlify-cli"
+          ],
+          "schedule": ["after 1am and before 2am on sunday"]
         }
       ]
     },
