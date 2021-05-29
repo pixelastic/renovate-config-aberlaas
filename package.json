@@ -51,7 +51,8 @@
           "groupName": "external dependencies",
           "packagePatterns": [
             ".*"
-          ]
+          ],
+          "excludePackagePatterns": ["np"]
         },
         {
           "groupName": "tooling",
