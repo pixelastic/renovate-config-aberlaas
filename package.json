@@ -18,7 +18,8 @@
     "default": {
       "description": "Default config options",
       "extends": [
-        ":semanticCommitTypeAll(chore)"
+        ":semanticCommitTypeAll(chore)",
+        "docker:disable"
       ],
       "rebaseStalePrs": true,
       "prConcurrentLimit": 20,
@@ -30,9 +31,6 @@
         "after 1pm and before 2am",
         "after 7pm and before 8am"
       ],
-      "docker": {
-        "enable": false
-      },
       "circleci": {
         "enabled": false
       },
@@ -82,6 +80,7 @@
             "hex-rgb",
             "is-url-superb",
             "p-map",
+            "p-all",
             "p-map-series",
             "strip-ansi",
             "time-span"
