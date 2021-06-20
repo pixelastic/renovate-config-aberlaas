@@ -81,6 +81,7 @@
             "is-url-superb",
             "p-map",
             "p-all",
+            "p-props",
             "p-map-series",
             "strip-ansi",
             "time-span"
