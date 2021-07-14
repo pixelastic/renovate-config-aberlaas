@@ -79,10 +79,11 @@
           "packageNames": [
             "hex-rgb",
             "is-url-superb",
-            "p-map",
+            "normalize-url",
             "p-all",
-            "p-props",
+            "p-map",
             "p-map-series",
+            "p-props",
             "strip-ansi",
             "time-span"
           ]
