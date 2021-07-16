@@ -11,25 +11,17 @@
   "scripts": {
     "release": "aberlaas release"
   },
-  "files": [
-    "package.json"
-  ],
+  "files": ["package.json"],
   "renovate-config": {
     "default": {
       "description": "Default config options",
-      "extends": [
-        ":semanticCommitTypeAll(chore)",
-        "docker:disable"
-      ],
+      "extends": [":semanticCommitTypeAll(chore)", "docker:disable"],
       "rebaseStalePrs": true,
       "prConcurrentLimit": 20,
       "prHourlyLimit": 20,
       "timezone": "Europe/Paris",
       "schedule": [
-        "after 1am and before 2am",
-        "after 7am and before 8am",
-        "after 1pm and before 2am",
-        "after 7pm and before 8am"
+        "after 1am and before 5am"
       ],
       "circleci": {
         "enabled": false
@@ -47,15 +39,13 @@
       "packageRules": [
         {
           "groupName": "external dependencies",
-          "packagePatterns": [
-            ".*"
-          ],
-          "excludePackagePatterns": [
-            "np"
-          ]
+          "packagePatterns": [".*"],
+          "excludePackagePatterns": ["np"]
         },
         {
           "groupName": "tooling",
+          "description": "My own modules. I only need to update them once a week (to limit the build minutes consumed by CircleCI). I don't need them updated whenever I push a new version.",
+          "schedule": ["every weekend"],
           "packageNames": [
             "aberlaas",
             "aoinan",
@@ -63,19 +53,19 @@
             "ensure-url-trailing-slash",
             "firost",
             "golgoth",
+            "imoen",
             "norska",
             "on-circle",
             "pietro",
+            "reddinx",
             "sov"
           ],
-          "packagePatterns": [
-            "@pixelastic/.*",
-            "norska-theme-*"
-          ]
+          "packagePatterns": ["@pixelastic/.*", "norska-theme-*"]
         },
         {
           "groupName": "ESM modules",
           "description": "Sindre Sorhus is moving his modules to ESM. I have to do the same, but for now I'll wait a bit",
+          "schedule": ["on the first day of the month"],
           "packageNames": [
             "hex-rgb",
             "is-url-superb",
@@ -91,13 +81,8 @@
         {
           "groupName": "netlify",
           "description": "Netlify releases a new version almost everyday, as soon as one of their dependencies are updated. We can afford to group those updates and only update once a week.",
-          "packageNames": [
-            "netlify",
-            "netlify-cli"
-          ],
-          "schedule": [
-            "after 1am and before 2am on sunday"
-          ]
+          "packageNames": ["netlify", "netlify-cli"],
+          "schedule": ["after 1am and before 2am on sunday"]
         }
       ]
     },
