@@ -54,9 +54,6 @@
         {
           "groupName": "tooling",
           "description": "My own modules. I only need to update them once a week (to limit the build minutes consumed by CircleCI). I don't need them updated whenever I push a new version.",
-          "schedule": [
-            "every weekend"
-          ],
           "packageNames": [
             "aberlaas",
             "aoinan",
@@ -83,6 +80,7 @@
             "on the first day of the month"
           ],
           "packageNames": [
+            "globby",
             "hex-rgb",
             "is-url-superb",
             "normalize-url",
