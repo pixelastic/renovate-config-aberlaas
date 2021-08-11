@@ -81,6 +81,7 @@
           ],
           "packageNames": [
             "globby",
+            "callsites",
             "hex-rgb",
             "is-url-superb",
             "normalize-url",
