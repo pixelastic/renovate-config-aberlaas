@@ -21,6 +21,7 @@
         ":semanticCommitTypeAll(chore)",
         "docker:disable"
       ],
+      "dependencyDashboard": false,
       "rebaseStalePrs": true,
       "prConcurrentLimit": 20,
       "prHourlyLimit": 20,
