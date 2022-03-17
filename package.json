@@ -44,6 +44,29 @@
       },
       "packageRules": [
         {
+          "groupName": "ESM modules",
+          "description": "Sindre Sorhus is moving his modules to ESM. I have to do the same, but I'll first wait for Jest to support ESM.",
+          "schedule": [
+            "on the first day of the month"
+          ],
+          "packageNames": [
+            "callsites",
+            "get-port",
+            "globby",
+            "hex-rgb",
+            "is-url-superb",
+            "marked",
+            "normalize-url",
+            "p-all",
+            "p-map",
+            "p-map-series",
+            "p-props",
+            "rev-hash",
+            "strip-ansi",
+            "time-span"
+          ]
+        },
+        {
           "groupName": "external dependencies",
           "packagePatterns": [
             ".*"
@@ -72,26 +95,6 @@
           "packagePatterns": [
             "@pixelastic/.*",
             "norska-theme-*"
-          ]
-        },
-        {
-          "groupName": "ESM modules",
-          "description": "Sindre Sorhus is moving his modules to ESM. I have to do the same, but for now I'll wait a bit",
-          "schedule": [
-            "on the first day of the month"
-          ],
-          "packageNames": [
-            "globby",
-            "callsites",
-            "hex-rgb",
-            "is-url-superb",
-            "normalize-url",
-            "p-all",
-            "p-map",
-            "p-map-series",
-            "p-props",
-            "strip-ansi",
-            "time-span"
           ]
         },
         {
