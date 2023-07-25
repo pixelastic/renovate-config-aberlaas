@@ -51,6 +51,7 @@
           ],
           "packageNames": [
             "callsites",
+            "find-up",
             "get-port",
             "globby",
             "hex-rgb",
