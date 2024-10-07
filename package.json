@@ -6,7 +6,7 @@
   "author": "Pixelastic <tim@pixelastic.com>",
   "license": "MIT",
   "devDependencies": {
-    "aberlaas": "1.25.1"
+    "aberlaas": "^2.9.0"
   },
   "scripts": {
     "release": "aberlaas release"
