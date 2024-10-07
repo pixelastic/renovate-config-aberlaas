@@ -48,9 +48,9 @@
           "description": "Packages we never want updated",
           "packageNames": [
             "hosted-git-info",
-            "got",
+            "got"
           ],
-          "enabled": false,
+          "enabled": false
         },
         {
           "groupName": "external dependencies",
@@ -76,14 +76,14 @@
             "sov"
           ],
           "packagePatterns": [
-            "@pixelastic/.*",
+            "@pixelastic/.*"
           ]
         },
         {
           "groupName": "norska",
           "description": "Everything related to norska. Not yet moved to ESM, so I'll stall updating those for now",
           "packageNames": [
-            "norska",
+            "norska"
           ],
           "packagePatterns": [
             "norska-theme-*"
