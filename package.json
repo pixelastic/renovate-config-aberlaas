@@ -44,29 +44,13 @@
       },
       "packageRules": [
         {
-          "groupName": "ESM modules",
-          "description": "Sindre Sorhus is moving his modules to ESM. I have to do the same, but I'll first wait for Jest to support ESM.",
-          "schedule": [
-            "on the first day of the month"
-          ],
+          "groupName": "Pinned packaged",
+          "description": "Packages we never want updated",
           "packageNames": [
-            "callsites",
-            "find-up",
-            "get-port",
-            "globby",
-            "hex-rgb",
-            "is-url-superb",
-            "marked",
-            "normalize-url",
-            "np",
-            "p-all",
-            "p-map",
-            "p-map-series",
-            "p-props",
-            "rev-hash",
-            "strip-ansi",
-            "time-span"
-          ]
+            "hosted-git-info",
+            "got",
+          ],
+          "enabled": false,
         },
         {
           "groupName": "external dependencies",
@@ -79,6 +63,7 @@
           "description": "My own modules. I only need to update them once a week (to limit the build minutes consumed by CircleCI). I don't need them updated whenever I push a new version.",
           "packageNames": [
             "aberlaas",
+            "algolia-indexing",
             "aoinan",
             "callirhoe",
             "ensure-url-trailing-slash",
