@@ -6,11 +6,12 @@
   "author": "Pixelastic <tim@pixelastic.com>",
   "license": "MIT",
   "devDependencies": {
-    "aberlaas": "^2.9.0"
+    "aberlaas": "^2.9.0",
+    "np": "10.0.7"
   },
   "packageManager": "yarn@4.5.0",
   "scripts": {
-    "release": "aberlaas release"
+    "release": "np"
   },
   "files": [
     "package.json"
