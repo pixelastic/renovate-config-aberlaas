@@ -70,7 +70,6 @@
             "firost",
             "golgoth",
             "imoen",
-            "norska",
             "on-circle",
             "pietro",
             "reddinx",
@@ -78,6 +77,15 @@
           ],
           "packagePatterns": [
             "@pixelastic/.*",
+          ]
+        },
+        {
+          "groupName": "norska",
+          "description": "Everything related to norska. Not yet moved to ESM, so I'll stall updating those for now",
+          "packageNames": [
+            "norska",
+          ],
+          "packagePatterns": [
             "norska-theme-*"
           ]
         },
