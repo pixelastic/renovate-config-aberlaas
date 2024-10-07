@@ -11,7 +11,7 @@
   },
   "packageManager": "yarn@4.5.0",
   "scripts": {
-    "release": "np"
+    "release": "np --no-tests --no-release-draft --no-2fa"
   },
   "files": [
     "package.json"
