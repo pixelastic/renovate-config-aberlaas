@@ -1,6 +1,6 @@
 {
   "name": "renovate-config-aberlaas",
-  "version": "1.8.2",
+  "version": "1.8.3",
   "description": "aberlaas's shareable renovate config",
   "repository": "git@github.com:pixelastic/renovate-config-aberlaas.git",
   "author": "Pixelastic <tim@pixelastic.com>",
