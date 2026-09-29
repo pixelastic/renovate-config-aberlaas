@@ -1,6 +1,6 @@
 {
   "name": "renovate-config-aberlaas",
-  "version": "1.8.3",
+  "version": "1.8.4",
   "type": "commonjs",
   "description": "aberlaas's shareable renovate config",
   "author": "Pixelastic <tim@pixelastic.com>",
