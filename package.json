@@ -1,21 +1,22 @@
 {
   "name": "renovate-config-aberlaas",
   "version": "1.8.3",
+  "type": "commonjs",
   "description": "aberlaas's shareable renovate config",
-  "repository": "git@github.com:pixelastic/renovate-config-aberlaas.git",
   "author": "Pixelastic <tim@pixelastic.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/git@github.com:pixelastic/renovate-config-aberlaas.git"
+  },
   "license": "MIT",
+  "packageManager": "yarn@4.5.0",
   "devDependencies": {
     "aberlaas": "^2.9.0",
     "np": "10.0.7"
   },
-  "packageManager": "yarn@4.5.0",
   "scripts": {
     "release": "np --no-tests --no-release-draft --no-2fa"
   },
-  "files": [
-    "package.json"
-  ],
   "renovate-config": {
     "default": {
       "description": "Default config options",
@@ -51,6 +52,17 @@
           "packageNames": [
             "hosted-git-info",
             "got"
+          ],
+          "enabled": false
+        },
+        {
+          "groupName": "Pinned yarn",
+          "description": "We don't want to update yarn automatically, we want our buils reproducible and pinned.",
+          "matchManagers": [
+            "npm"
+          ],
+          "matchDepTypes": [
+            "packageManager"
           ],
           "enabled": false
         },
