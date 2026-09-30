@@ -1,0 +1,73 @@
+{
+  "description": "Default config options",
+  "extends": [":semanticCommitTypeAll(chore)", "docker:disable"],
+  "dependencyDashboard": false,
+  "rebaseWhen": "behind-base-branch",
+  "prConcurrentLimit": 20,
+  "prHourlyLimit": 20,
+  "timezone": "Europe/Paris",
+  "schedule": ["after 1am and before 5am"],
+  "circleci": {
+    "enabled": false
+  },
+  "automergeType": "branch",
+  "minor": {
+    "automerge": true
+  },
+  "patch": {
+    "automerge": true
+  },
+  "packageRules": [
+    {
+      "groupName": "Pinned node",
+      "description": "We don't want to update the node version in .nvmrc",
+      "matchCategories": ["node"],
+      "enabled": false
+    },
+    {
+      "groupName": "Pinned yarn",
+      "description": "We don't want to update yarn automatically, we want our buils reproducible and pinned.",
+      "matchManagers": ["npm"],
+      "matchDepTypes": ["packageManager"],
+      "enabled": false
+    },
+    {
+      "groupName": "Pinned packaged",
+      "description": "Packages we never want updated",
+      "matchPackageNames": ["hosted-git-info", "got"],
+      "enabled": false
+    },
+    {
+      "groupName": "external dependencies",
+      "matchPackageNames": ["/.*/"]
+    },
+    {
+      "groupName": "tooling",
+      "description": "My own modules. I only need to update them once a week (to limit the build minutes consumed by CircleCI). I don't need them updated whenever I push a new version.",
+      "matchPackageNames": [
+        "aberlaas",
+        "algolia-indexing",
+        "aoinan",
+        "ensure-url-trailing-slash",
+        "firost",
+        "gilmore",
+        "golgoth",
+        "imoen",
+        "on-circle",
+        "pietro",
+        "/@pixelastic/.*/"
+      ]
+    },
+    {
+      "groupName": "norska",
+      "description": "Everything related to norska. Not yet moved to ESM, so I'll stall updating those for now",
+      "matchPackageNames": ["norska", "/norska-theme-*/"]
+    },
+    {
+      "groupName": "netlify",
+      "description": "Netlify releases a new version almost everyday, as soon as one of their dependencies are updated. We can afford to group those updates and only update once a week.",
+      "matchPackageNames": ["netlify", "netlify-cli"],
+      "schedule": ["after 1am and before 2am on sunday"]
+    }
+  ]
+}
