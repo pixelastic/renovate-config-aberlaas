@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+set -e
+
+node_modules/.bin/aberlaas lint "$@"
+node_modules/.bin/renovate-config-validator --strict --no-global default.json

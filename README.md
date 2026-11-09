@@ -16,6 +16,17 @@ In your `.github/renovate.json` file, for example:
 Renovate reads the preset from `default.json` on the `main` branch of this
 repository. Pushing to `main` is enough to update every project.
 
+## Development
+
+Every push to `main` is live for all projects, so each commit must be valid. A
+`pre-commit` hook fixes staged files with `yarn run lint:fix`, then checks
+`default.json` with Renovate's config validator. Enable the hook once after
+cloning:
+
+```sh
+git config core.hooksPath scripts/hooks
+```
+
 ## Preset
 
 `default.json` contains the main options that you should enable on all aberlaas
