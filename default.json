@@ -60,8 +60,9 @@
     },
     {
       "groupName": "norska",
-      "description": "Everything related to norska. Not yet moved to ESM, so I'll stall updating those for now",
-      "matchPackageNames": ["norska", "/norska-theme-*/"]
+      "description": "I will not use norska anymore, so let's freeze it",
+      "matchPackageNames": ["norska", "/^norska-theme-/"],
+      "enabled": false
     },
     {
       "groupName": "netlify",

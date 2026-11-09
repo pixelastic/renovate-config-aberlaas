@@ -28,6 +28,7 @@ projects.
 - Only update dependencies between 1am and 5am
 - Automerge `minor` and `patch` updates in a branch, without a PR
 - Do not update docker image, CircleCI orbs, node and yarn versions
-- Group updates of my own modules, of norska and of netlify
+- Group updates of my own modules and of netlify
+- Never update norska or its themes (abandoned)
 
 [1]: https://github.com/pixelastic/aberlaas/
