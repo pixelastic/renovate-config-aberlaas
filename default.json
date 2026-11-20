@@ -32,10 +32,16 @@
       "enabled": false
     },
     {
-      "groupName": "Pinned packaged",
+      "groupName": "Pinned packages",
       "description": "Packages we never want updated",
       "matchPackageNames": ["hosted-git-info", "got"],
       "enabled": false
+    },
+    {
+      "groupName": "Quarantined packages",
+      "description": "Yarn quarantines versions published less than 24 hours ago (npmMinimalAgeGate). Wait as long before proposing them.",
+      "matchDatasources": ["npm"],
+      "minimumReleaseAge": "1 day"
     },
     {
       "groupName": "external dependencies",
